@@ -1,0 +1,65 @@
+{
+  "version": "0.2.0",
+  "synthetic": true,
+  "seed": 42,
+  "users": 1200,
+  "events": 17275,
+  "as_of": "2026-09-30",
+  "ltv_horizon": "D0-D30 inclusive; mature cohorts only",
+  "platform_fee_assumption": 0.3,
+  "ltv": [
+    {
+      "channel": "creator",
+      "installs": 313,
+      "receipts_usd": 1317.59,
+      "observed_receipts_ltv_usd": 4.2096,
+      "cac_usd": 3.0327,
+      "contribution_roas": 0.971622860152752
+    },
+    {
+      "channel": "organic",
+      "installs": 332,
+      "receipts_usd": 1199.72,
+      "observed_receipts_ltv_usd": 3.6136,
+      "cac_usd": 0.0,
+      "contribution_roas": null
+    },
+    {
+      "channel": "search",
+      "installs": 347,
+      "receipts_usd": 1585.31,
+      "observed_receipts_ltv_usd": 4.5686,
+      "cac_usd": 3.1066,
+      "contribution_roas": 1.029422077922078
+    }
+  ],
+  "experiment": {
+    "control_n": 603,
+    "treatment_n": 597,
+    "control_rate": 0.593698175787728,
+    "treatment_rate": 0.6599664991624791,
+    "absolute_lift": 0.06626832337475108,
+    "relative_lift": 0.11161955026529304,
+    "ci95": [
+      0.011671447671591784,
+      0.12086519907791038
+    ],
+    "p_value": 0.017645109114697043,
+    "srm_p_value": 0.8624902301359216,
+    "valid_allocation": true,
+    "decision": "Review interval, MDE and guardrails; no automatic launch"
+  },
+  "churn": {
+    "train_n": 664,
+    "test_n": 423,
+    "embargo_days": 7,
+    "train_install_end": "2026-08-10",
+    "test_install_start": "2026-08-18",
+    "test_prevalence": 0.14893617021276595,
+    "roc_auc": 0.7396825396825397,
+    "brier": 0.11111578568384935,
+    "constant_prior_brier": 0.1269710864784662,
+    "precision_at_10pct": 0.4883720930232558,
+    "note": "Synthetic data. Predictive risk is not causal uplift."
+  }
+}

@@ -1,0 +1,2 @@
+# Optional documentation build only; analytics has no third-party dependencies.
+Markdown==3.10.2

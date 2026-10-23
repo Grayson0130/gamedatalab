@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+.venv/
+site/
+dist/
+reports/my-demo/
+.DS_Store
